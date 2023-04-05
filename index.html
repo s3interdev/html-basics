@@ -13,117 +13,143 @@
 	</head>
 
 	<body>
-		<h1>My Goals for The Year</h1>
+		<header>
+			<h1>My Goals for The Year</h1>
+
+			<nav>
+				<ul>
+					<li><a href="#html">Learning HTML</a></li>
+					<li><a href="#vacation">Planning a Vacation</a></li>
+				</ul>
+			</nav>
+		</header>
 
 		<hr />
 
-		<nav>
-			<ul>
-				<li><a href="#html">Learning HTML</a></li>
-				<li><a href="#vacation">Planning a Vacation</a></li>
-			</ul>
-		</nav>
+		<main>
+			<article id="html">
+				<h2>I'm Ready to Learn HTML</h2>
+				<p>This is my first web page.</p>
 
-		<hr />
+				<section>
+					<h3>HTML 5</h3>
 
-		<section id="html">
-			<h2>I'm Ready to Learn HTML</h2>
-			<p>This is my first web page.</p>
+					<img
+						src="/img/html_logo_300x300.png"
+						alt="HTML 5 logo"
+						title="I am learning HTML"
+						width="300"
+						height="300"
+					/>
 
-			<img
-				src="/img/html_logo_300x300.png"
-				alt="HTML 5 logo"
-				title="I am learning HTML"
-				width="300"
-				height="300"
-			/>
+					<figure>
+						<figcaption>An example of HTML 5 code</figcaption>
+						<p>
+							<code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+						</p>
+					</figure>
+				</section>
 
-			<figure>
-				<figcaption>An example of HTML 5 code</figcaption>
+				<section>
+					<h3>My Daily Schedule</h3>
+					<p>Let me tell you how:</p>
+					<ol>
+						<li>...I learn about web development.</li>
+
+						<li>...I plan out my schedule.</li>
+
+						<li>
+							...I use resources from
+							<abbr title="Mozilla Developer Network">
+								<a href="https://developer.mozilla.org/">MDN</a>
+							</abbr>
+						</li>
+					</ol>
+
+					<aside>
+						<details>
+							<summary>Guess the <mark>number of hours</mark> I code per day?</summary>
+							<p>
+								I start at <time datetime="08:00">8 am</time> and I write code for
+								<time datetime="PT5H">5 hours</time> every morning.
+							</p>
+						</details>
+					</aside>
+				</section>
+			</article>
+
+			<hr />
+
+			<article id="vacation">
+				<h2>I'm Also Planning a Vacation</h2>
+				<p>I have been working hard and <em>really need a getaway</em>.</p>
 				<p>
-					<code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+					I live in <abbr title="Nairobi">NBO</abbr> so I would like to visit a beach.
 				</p>
-			</figure>
 
-			<h3>My Daily Schedule</h3>
-			<p>Let me tell you how:</p>
-			<ol>
-				<li>...I learn about web development.</li>
+				<section>
+					<h3>Places I would like to visit</h3>
+					<ul>
+						<li>
+							<p>I have heard good things about the Caribbean.</p>
+							<figure>
+								<img
+									src="/img/caribbean.jpg"
+									alt="Caribbean Beach"
+									title="I want to visit a Caribbean Beach"
+									width="400"
+									height="225"
+									loading="lazy"
+								/>
+								<figcaption>Caribbean Beach Getaway</figcaption>
+							</figure>
+						</li>
+						<li>
+							<p>I have heard good things about going here:</p>
+							<address>
+								Chale Island Reserve<br />
+								Malindi County, Kenya<br />
+							</address>
 
-				<li>...I plan out my schedule.</li>
+							<figure>
+								<img
+									src="/img/vacation.jpg"
+									alt="Chale Island Reserve"
+									title="It's 5 O'clock Somewhere"
+									width="400"
+									height="267"
+									loading="lazy"
+								/>
+								<figcaption>A Kenyan Vacation</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</section>
 
-				<li>
-					...I use resources from
-					<abbr title="Mozilla Developer Network">
-						<a href="https://developer.mozilla.org/">MDN</a>
-					</abbr>
-				</li>
-			</ol>
-		</section>
+				<section>
+					<!-- TODO: Add more places -->
+					<h3>Places I would like to avoid</h3>
+					<dl>
+						<dt>North Pole</dt>
+						<dd>I hear this place is <strong>very cold</strong>!</dd>
 
-		<hr />
+						<dt>South Pole</dt>
+						<dd>This place is also cold</dd>
 
-		<section id="vacation">
-			<h2>I'm Also Planning a Vacation</h2>
-			<p>I have been working hard and <em>really need a getaway</em>.</p>
-			<p>I live in <abbr title="Nairobi">NBO</abbr> so I would like to visit a beach.</p>
-
-			<h3>Places I would like to visit</h3>
-			<ul>
-				<li>
-					<p>I have heard good things about the Caribbean.</p>
-					<figure>
-						<img
-							src="/img/caribbean.jpg"
-							alt="Caribbean Beach"
-							title="I want to visit a Caribbean Beach"
-							width="400"
-							height="225"
-							loading="lazy"
-						/>
-						<figcaption>Caribbean Beach Getaway</figcaption>
-					</figure>
-				</li>
-				<li>
-					<p>I have heard good things about going here:</p>
-					<address>
-						Chale Island Reserve<br />
-						Malindi County, Kenya<br />
-					</address>
-
-					<figure>
-						<img
-							src="/img/vacation.jpg"
-							alt="Chale Island Reserve"
-							title="It's 5 O'clock Somewhere"
-							width="400"
-							height="267"
-							loading="lazy"
-						/>
-						<figcaption>A Kenyan Vacation</figcaption>
-					</figure>
-				</li>
-			</ul>
-
-			<!-- TODO: Add more places -->
-			<h3>Places I would like to avoid</h3>
-			<dl>
-				<dt>North Pole</dt>
-				<dd>I hear this place is <strong>very cold</strong>!</dd>
-
-				<dt>South Pole</dt>
-				<dd>This place is also cold</dd>
-
-				<dt>The Himalaya Mountain Range</dt>
-				<dd>These are also cold and have a high altitude</dd>
-			</dl>
-		</section>
+						<dt>The Himalaya Mountain Range</dt>
+						<dd>These are also cold and have a high altitude</dd>
+					</dl>
+				</section>
+			</article>
+		</main>
 
 		<hr />
 
-		&lt;&lt;&lt; &copy; <a href="/about.html">Michael Owuor</a> &gt;&gt;&gt;
-		<p>
-			<a href="#">Back to Top</a>
-		</p>
+		<footer>
+			<p>&lt;&lt;&lt; &copy; <a href="/about.html">Michael Owuor</a> &gt;&gt;&gt;</p>
+			<p>
+				<a href="#">Back to Top</a>
+			</p>
+		</footer>
 	</body>
 </html>
